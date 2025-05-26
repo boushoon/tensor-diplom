@@ -1,37 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music - Last.fm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="header-left">
+        <div class="player-controls">
+            <button class="control-btn">
+                <img src="https://www.last.fm/static/images/playbar/previous_track.1e1b1fccec35.svg" alt="Previous" class="prev-btn">
+            </button>
+            <button class="control-btn">
+                <img src="https://clipart-library.com/images/5iRraekRT.png" alt="Play/Stop" class="play-btn">
+            </button>
+            <button class="control-btn">
+                <img src="https://www.last.fm/static/images/playbar/previous_track.1e1b1fccec35.svg" alt="Next" class="next-btn">
+            </button>
+            <button class="control-btn">
+                <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8"/></svg>
+            </button>
+        </div>
+    </div>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="header-center">
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Lastfm_logo.svg/1200px-Lastfm_logo.svg.png" alt="Last.fm Logo" class="logo-img"></a>
+    </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div class="header-right">
+        <button class="search-btn">
+            <img src="https://www.last.fm/static/images/icons/search/search_16.9c1d552b8f55.svg" alt="Search">
+        </button>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Live</a>
+            <a href="#">Music</a>
+            <a href="#">Charts</a>
+            <a href="#">Events</a>
+            <a href="#">Features</a>
+        </nav>
+        <div class="user-avatar"></div>
+    </div>
+</header>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<!-- Main Content -->
+<div class="container">
+    <div class="header-page">Music</div>
+
+    <div class="header-block">Hot right now</div>
+    <div class="artists-line">
+        <!-- Artist 1 -->
+        <div class="artist-card">
+            <div class="artist-avatar"></div>
+            <div class="artist-name">Kanye West</div>
+            <div class="artist-tags">hip-hop - rap - hip hop</div>
+        </div>
+
+        <!-- Artist 2 -->
+        <div class="artist-card">
+            <div class="artist-avatar"></div>
+            <div class="artist-name">Jopp</div>
+            <div class="artist-tags">k-pop - hip-hop - korean</div>
+        </div>
+
+        <!-- Artist 3 -->
+        <div class="artist-card">
+            <div class="artist-avatar"></div>
+            <div class="artist-name">The Weeknd</div>
+            <div class="artist-tags">mb - electronic - canadian</div>
+        </div>
+
+        <!-- Artist 4 -->
+        <div class="artist-card">
+            <div class="artist-avatar"></div>
+            <div class="artist-name">Tyler, the Creator</div>
+            <div class="artist-tags">hip-hop - rap - chugkia</div>
+        </div>
+
+        <!-- Artist 5 -->
+        <div class="artist-card">
+            <div class="artist-avatar"></div>
+            <div class="artist-name">Drake</div>
+            <div class="artist-tags">hip-hop - rap - mb</div>
+        </div>
+
+        <!-- Artist 6 -->
+        <div class="artist-card">
+            <div class="artist-avatar"></div>
+            <div class="artist-name">Steve Lacy</div>
+            <div class="artist-tags">free jazz - jazz - saxophonn</div>
+        </div>
+    </div>
+
+    <div class="artists-line">
+        <!-- Artist 7 -->
+        <div class="artist-card">
+            <div class="artist-avatar"></div>
+            <div class="artist-name">Playhol Carti</div>
+            <div class="artist-tags">trap - hip-hop - cloud rag</div>
+        </div>
+
+        <!-- Artist 8 -->
+        <div class="artist-card">
+            <div class="artist-avatar"></div>
+            <div class="artist-name">Kendrick Lamar</div>
+            <div class="artist-tags">hip-hop - rap - hip hop</div>
+        </div>
+
+        <!-- Artist 9 -->
+        <div class="artist-card">
+            <div class="artist-avatar"></div>
+            <div class="artist-name">Joji</div>
+            <div class="artist-tags">lo-fi - mb - hip-hop</div>
+        </div>
+
+        <!-- Artist 10 -->
+        <div class="artist-card">
+            <div class="artist-avatar"></div>
+            <div class="artist-name">Lana Del Rey</div>
+            <div class="artist-tags">indie - pop - female vocalists</div>
+        </div>
+
+        <!-- Artist 11 -->
+        <div class="artist-card">
+            <div class="artist-avatar"></div>
+            <div class="artist-name">Mitski</div>
+            <div class="artist-tags">indie rock - indie - indie pop</div>
+        </div>
+
+        <!-- Artist 12 -->
+        <div class="artist-card">
+            <div class="artist-avatar"></div>
+            <div class="artist-name">Frank Ocean</div>
+            <div class="artist-tags">mb - stud - hip-hop</div>
+        </div>
+    </div>
+
+    <div class="header-block">Popular tracks</div>
+    <div class="tracks-line">
+        <!-- Track group 1 -->
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">SEXY NUKIN (feat. BN of BTS)</div>
+                <div class="track-artist">Balming Tiger</div>
+                <div class="track-tags">rap - hip hop - alternative</div>
+            </div>
+        </div>
+
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">HORE</div>
+                <div class="track-artist">j-hope</div>
+                <div class="track-tags">rock - hip-hop - rap</div>
+            </div>
+        </div>
+
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">Yet to Come</div>
+                <div class="track-artist">BTS</div>
+                <div class="track-tags">k-pop - bts - korean</div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Track group 2 -->
+    <div class="tracks-line">
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">Bad Decisions (with BTS & Snoop Dogs)</div>
+                <div class="track-artist">Benny Blanco</div>
+                <div class="track-tags">bts - korean - snoop dogs</div>
+            </div>
+        </div>
+
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">Left and Right (feat. Jung Kook of BTS)</div>
+                <div class="track-artist">Charlie Puth</div>
+                <div class="track-tags">pap - jungkook - 2022</div>
+            </div>
+        </div>
+
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">Pink Venom</div>
+                <div class="track-artist">BLACKPINK</div>
+                <div class="track-tags">k-pop - hip-hop</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Track group 3 -->
+    <div class="tracks-line">
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">After-LIKE</div>
+                <div class="track-artist">IVE</div>
+                <div class="track-tags">k-pop - disco - eddy</div>
+            </div>
+        </div>
+
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">Talk that Talk</div>
+                <div class="track-artist">TWICE</div>
+                <div class="track-tags">k-pop - korean - kpop</div>
+            </div>
+        </div>
+
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">Hype Boy</div>
+                <div class="track-artist">NewJeans</div>
+                <div class="track-tags">k-pop - kpop - eddy</div>
+            </div>
+        </div>
+    </div>
+    <!-- Track group 4 -->
+    <div class="tracks-line">
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">Bad Habit</div>
+                <div class="track-artist">Steve Lacy</div>
+                <div class="track-tags">indie - sexual - bedroom pop</div>
+            </div>
+        </div>
+
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">Talk</div>
+                <div class="track-artist">Yest</div>
+                <div class="track-tags">trap - twizzy - rap</div>
+            </div>
+        </div>
+
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">Stay Alive (Prod. SUBA of BTS)</div>
+                <div class="track-artist">Jump Kook</div>
+                <div class="track-tags">jungkook - bts - est</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Track group 5 -->
+    <div class="tracks-line">
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <h3>Romantic Honicide</h3>
+                <div class="track-artist">devd</div>
+                <div class="track-tags">Indie</div>
+            </div>
+        </div>
+
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">Super Freaky Girl</div>
+                <div class="track-artist">Nicki Hiraj</div>
+                <div class="track-tags">hip-hop - rap - hip hop</div>
+            </div>
+        </div>
+
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">With You</div>
+                <div class="track-artist">Jimin</div>
+                <div class="track-tags">jimin - ost - bts</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Track group 6 -->
+    <div class="tracks-line">
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">That That (prod. & feat. SUBA of BTS)</div>
+                <div class="track-artist">Pay</div>
+                <div class="track-tags">sugar - prod - sugar - fast - sugar</div>
+            </div>
+        </div>
+
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">Glimpse of Us</div>
+                <div class="track-artist">Joji</div>
+                <div class="track-tags">ballad - pop - piano</div>
+            </div>
+        </div>
+
+        <div class="track-item">
+            <div class="track-cover"></div>
+            <div class="track-info">
+                <div class="track-title">YOURS</div>
+                <div class="track-artist">Jin</div>
+                <div class="track-tags">est - ballad - kpop</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <div class="footer-column-header">COMPANY</div>
+            <ul>
+                <li><a href="#">About Last.fm</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Jobs</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <div class="footer-column-header">HELP</div>
+            <ul>
+                <li><a href="#">Track My Music</a></li>
+                <li><a href="#">Community Support</a></li>
+                <li><a href="#">Community Guidelines</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <div class="footer-column-header">GOODIES</div>
+            <ul>
+                <li><a href="#">Download Scrobbar</a></li>
+                <li><a href="#">Developer API</a></li>
+                <li><a href="#">Free Music Downloads</a></li>
+                <li><a href="#">Marchandise</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <div class="footer-column-header">ACCOUNT</div>
+            <ul>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Last.fmPro</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <div class="footer-column-header">FOLLOW US</div>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="language-selector">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <div class="language-inner">
+                    <a href="#" class="active">English</a>
+                    <a href="#" class="no-active">Deutsch</a>
+                    <a href="#" class="no-active">Español</a>
+                    <a href="#" class="no-active">Français</a>
+                    <a href="#" class="no-active">Italiano</a>
+                    <a href="#" class="no-active">日本語</a>
+                    <a href="#" class="no-active">Polski</a>
+                    <a href="#" class="no-active">Portuguese</a>
+                    <a href="#" class="no-active">Pyccoof</a>
+                    <a href="#" class="no-active">Swenska</a>
+                    <a href="#" class="no-active">Türkçe</a>
+                    <a href="#" class="no-active">南美中文</a>
+                </div>
+
+                <a href="#" class="time-zone">
+                    Time zone:
+                    <strong>Europe/Moscow</strong>
+                </a>
+            </div>
+
+            <div class="footer-right">
+                <div class="audioscrobbler-text">Audioscrobbler</div>
+                <img src="https://www.last.fm/static/images/footer_logo@2x.49ca51948b0a.png" alt="Logo" class="footer-logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="copyright-content">
+            <a href="#">CBS Interactive</a> © 2022 Last.fm Ltd. All rights reserved
+            <div class="copyright-links">
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Legal Policies</a>
+                <a href="#">Cookies Policy</a>
+                <a href="#">Do Not Sell Try Personal Information</a>
+            </div>
+            <div class="copyright-credits">- Jebra Vinson/CBS - Last.fm Music</div>
+        </div>
+    </div>
+</footer>
+</body>
 </html>
