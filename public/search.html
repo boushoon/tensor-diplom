@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music - Last.fm</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="search.css">
 </head>
 <body>
@@ -36,7 +38,7 @@
             <img src="https://www.last.fm/static/images/icons/search/search_16.9c1d552b8f55.svg" alt="Search">
         </button>
         <nav class="nav-links">
-            <a href="#" class="nav-links-a">Home</a>
+            <a href="index.html" class="nav-links-a">Home</a>
             <a href="#" class="nav-links-a">Live</a>
             <a href="#" class="nav-links-a">Music</a>
             <a href="#" class="nav-links-a">Charts</a>
@@ -67,8 +69,8 @@
 
         <!-- Search Bar -->
         <div class="search-bar">
-            <input class="search-bar-input" type="text" placeholder="" />
-            <button class="search-button"><img src="https://www.last.fm/static/images/icons/search/search_232323_16.fd4564f92909.png"
+            <input id="search-input" class="search-bar-input" type="text" placeholder="Search music..." />
+            <button class="search-button" id="search-button"><img src="https://www.last.fm/static/images/icons/search/search_232323_16.fd4564f92909.png"
                          alt="Search"
                          class="search-bar-icon" /></button>
         </div>
@@ -193,8 +195,6 @@
             </div>
             <a href="#" class="more">More tracks ></a>
         </section>
-
-
     </div>
 </main>
 
@@ -296,5 +296,6 @@
         </div>
     </div>
 </footer>
+<script src="search.js"></script>
 </body>
 </html>

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music - Last.fm</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
 <!-- Header -->
@@ -31,7 +33,7 @@
     </div>
 
     <div class="header-right">
-        <a class="search-btn" href="search.html">
+        <a class="search-btn" href="search.html?search=music" id="search-button">
             <img src="https://www.last.fm/static/images/icons/search/search_16.9c1d552b8f55.svg" alt="Search">
         </a>
         <nav class="nav-links">
@@ -51,7 +53,7 @@
     <div class="header-page">Music</div>
 
     <div class="header-block">Hot right now</div>
-    <div class="artists-line">
+    <div class="artists-line" id="artists-line">
         <!-- Artist 1 -->
         <div class="artist-card">
             <div class="artist-avatar"></div>
@@ -93,9 +95,7 @@
             <div class="artist-name">Steve Lacy</div>
             <div class="artist-tags">free jazz - jazz - saxophonn</div>
         </div>
-    </div>
 
-    <div class="artists-line">
         <!-- Artist 7 -->
         <div class="artist-card">
             <div class="artist-avatar"></div>
@@ -140,7 +140,7 @@
     </div>
 
     <div class="header-block">Popular tracks</div>
-    <div class="tracks-line">
+    <div class="tracks-line" id="tracks-line">
         <!-- Track group 1 -->
         <div class="track-item">
             <div class="track-cover"></div>
@@ -168,10 +168,7 @@
                 <div class="track-tags">k-pop - bts - korean</div>
             </div>
         </div>
-    </div>
 
-        <!-- Track group 2 -->
-    <div class="tracks-line">
         <div class="track-item">
             <div class="track-cover"></div>
             <div class="track-info">
@@ -198,10 +195,7 @@
                 <div class="track-tags">k-pop - hip-hop</div>
             </div>
         </div>
-    </div>
 
-    <!-- Track group 3 -->
-    <div class="tracks-line">
         <div class="track-item">
             <div class="track-cover"></div>
             <div class="track-info">
@@ -228,9 +222,7 @@
                 <div class="track-tags">k-pop - kpop - eddy</div>
             </div>
         </div>
-    </div>
-    <!-- Track group 4 -->
-    <div class="tracks-line">
+
         <div class="track-item">
             <div class="track-cover"></div>
             <div class="track-info">
@@ -257,10 +249,7 @@
                 <div class="track-tags">jungkook - bts - est</div>
             </div>
         </div>
-    </div>
 
-    <!-- Track group 5 -->
-    <div class="tracks-line">
         <div class="track-item">
             <div class="track-cover"></div>
             <div class="track-info">
@@ -287,10 +276,7 @@
                 <div class="track-tags">jimin - ost - bts</div>
             </div>
         </div>
-    </div>
 
-    <!-- Track group 6 -->
-    <div class="tracks-line">
         <div class="track-item">
             <div class="track-cover"></div>
             <div class="track-info">
@@ -418,5 +404,6 @@
         </div>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
