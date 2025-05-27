@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music - Last.fm</title>
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/header.css">
+        <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+<div id="root">
+     <script src="script.js" defer></script>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <div class="player-controls">
+                <button class="control-btn">
+                    <img src="https://www.last.fm/static/images/playbar/previous_track.1e1b1fccec35.svg" alt="Previous" class="prev-btn">
+                </button>
+                <button class="control-btn">
+                    <img src="https://clipart-library.com/images/5iRraekRT.png" alt="Play/Stop" class="play-btn">
+                </button>
+                <button class="control-btn">
+                    <img src="https://www.last.fm/static/images/playbar/previous_track.1e1b1fccec35.svg" alt="Next" class="next-btn">
+                </button>
+                <button class="control-btn">
+                    <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="header-center">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Lastfm_logo.svg/1200px-Lastfm_logo.svg.png" alt="Last.fm Logo" class="logo-img"></a>
+        </div>
+
+        <div class="header-right">
+            <a class="search-btn" href="search.html?search=music" id="search-button">
+                <img src="https://www.last.fm/static/images/icons/search/search_16.9c1d552b8f55.svg" alt="Search">
+            </a>
+            <nav class="nav-links">
+                <a href="#" class="nav-links-a">Home</a>
+                <a href="#" class="nav-links-a">Live</a>
+                <a href="#" class="nav-links-a">Music</a>
+                <a href="#" class="nav-links-a">Charts</a>
+                <a href="#" class="nav-links-a">Events</a>
+                <a href="#" class="nav-links-a">Features</a>
+            </nav>
+            <div class="user-avatar"></div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="header-page">Music</div>
+
+        <div class="header-block">Hot right now</div>
+        <div class="artists-line" id="artists-line">
+            <!-- Artist 1 -->
+            <div class="artist-card">
+                <div class="artist-avatar"></div>
+                <div class="artist-name">Kanye West</div>
+                <div class="artist-tags">hip-hop - rap - hip hop</div>
+            </div>
+
+            <!-- Artist 2 -->
+            <div class="artist-card">
+                <div class="artist-avatar"></div>
+                <div class="artist-name">Jopp</div>
+                <div class="artist-tags">k-pop - hip-hop - korean</div>
+            </div>
+
+            <!-- Artist 3 -->
+            <div class="artist-card">
+                <div class="artist-avatar"></div>
+                <div class="artist-name">The Weeknd</div>
+                <div class="artist-tags">mb - electronic - canadian</div>
+            </div>
+
+            <!-- Artist 4 -->
+            <div class="artist-card">
+                <div class="artist-avatar"></div>
+                <div class="artist-name">Tyler, the Creator</div>
+                <div class="artist-tags">hip-hop - rap - chugkia</div>
+            </div>
+        </div>
+
+        <div class="header-block">Popular tracks</div>
+        <div class="tracks-line" id="tracks-line">
+            <!-- Track group 1 -->
+            <div class="track-item">
+                <div class="track-cover"></div>
+                <div class="track-info">
+                    <div class="track-title">SEXY NUKIN (feat. BN of BTS)</div>
+                    <div class="track-artist">Balming Tiger</div>
+                    <div class="track-tags">rap - hip hop - alternative</div>
+                </div>
+            </div>
+
+            <div class="track-item">
+                <div class="track-cover"></div>
+                <div class="track-info">
+                    <div class="track-title">HORE</div>
+                    <div class="track-artist">j-hope</div>
+                    <div class="track-tags">rock - hip-hop - rap</div>
+                </div>
+            </div>
+
+            <div class="track-item">
+                <div class="track-cover"></div>
+                <div class="track-info">
+                    <div class="track-title">Yet to Come</div>
+                    <div class="track-artist">BTS</div>
+                    <div class="track-tags">k-pop - bts - korean</div>
+                </div>
+            </div>
+
+            <div class="track-item">
+                <div class="track-cover"></div>
+                <div class="track-info">
+                    <div class="track-title">Bad Decisions (with BTS & Snoop Dogs)</div>
+                    <div class="track-artist">Benny Blanco</div>
+                    <div class="track-tags">bts - korean - snoop dogs</div>
+                </div>
+            </div>
+
+            <div class="track-item">
+                <div class="track-cover"></div>
+                <div class="track-info">
+                    <div class="track-title">Left and Right (feat. Jung Kook of BTS)</div>
+                    <div class="track-artist">Charlie Puth</div>
+                    <div class="track-tags">pap - jungkook - 2022</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-column-header">COMPANY</div>
+                <ul class="footer-column-ul">
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">About Last.fm</a></li>
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Contact Us</a></li>
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Jobs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-column-header">HELP</div>
+                <ul class="footer-column-ul">
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Track My Music</a></li>
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Community Support</a></li>
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Community Guidelines</a></li>
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Help</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-column-header">GOODIES</div>
+                <ul class="footer-column-ul">
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Download Scrobbler</a></li>
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Developer API</a></li>
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Free Music Downloads</a></li>
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Merchandise</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-column-header">ACCOUNT</div>
+                <ul class="footer-column-ul">
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Inbox</a></li>
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Settings</a></li>
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Last.fmPro</a></li>
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-column-header">FOLLOW US</div>
+                <ul class="footer-column-ul">
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Facebook</a></li>
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Twitter</a></li>
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">Instagram</a></li>
+                    <li class="footer-column-li"><a href="#" class="footer-column-a">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="language-selector">
+            <div class="footer-inner">
+                <div class="footer-left">
+                    <div class="language-inner">
+                        <a href="#" class="active">English</a>
+                        <a href="#" class="no-active">Deutsch</a>
+                        <a href="#" class="no-active">Español</a>
+                        <a href="#" class="no-active">Français</a>
+                        <a href="#" class="no-active">Italiano</a>
+                        <a href="#" class="no-active">日本語</a>
+                        <a href="#" class="no-active">Polski</a>
+                        <a href="#" class="no-active">Português</a>
+                        <a href="#" class="no-active">Pyccкий</a>
+                        <a href="#" class="no-active">Svenska</a>
+                        <a href="#" class="no-active">Türkçe</a>
+                        <a href="#" class="no-active">南美中文</a>
+                    </div>
+
+                    <a href="#" class="time-zone">
+                        Time zone:
+                        <strong>Europe/Moscow</strong>
+                    </a>
+                </div>
+
+                <div class="footer-right">
+                    <div class="audioscrobbler-text">Audioscrobbler</div>
+                    <img src="https://www.last.fm/static/images/footer_logo@2x.49ca51948b0a.png" alt="Logo" class="footer-logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="copyright-content">
+                <a href="#" class="copyright-content-a">CBS Interactive</a>© 2022 Last.fm Ltd. All rights reserved
+                <div class="copyright-links">
+                    ·<a href="#" class="copyright-content-a">Terms of Use</a>
+                    ·<a href="#" class="copyright-content-a">Privacy Policy</a>
+                    ·<a href="#" class="copyright-content-a">Legal Policies</a>
+                    ·<a href="#" class="copyright-content-a">Cookies Policy</a>
+                    ·<a href="#" class="copyright-content-a">Do Not Sell Try Personal Information</a>
+                </div>
+                <div class="copyright-credits">· <a href="#" class="copyright-content-a">Jebra Vinson/CBS</a> · <a href="#" class="copyright-content-a">Last.fm Music</a></div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

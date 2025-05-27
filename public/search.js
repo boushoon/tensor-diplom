@@ -1,7 +1,14 @@
 const API_BASE = 'https://ws.audioscrobbler.com/2.0/';
 const API_KEY = '25426500cbd993d0f08b55b5702293a1';
 
-// --- Функция для выполнения запроса к Last.fm API ---
+/**
+ * Выполняет запрос к API Last.fm с заданным методом и параметрами.
+ * Формирует URL с параметрами и ключом API, возвращает JSON-ответ.
+ * @param {string} method - Имя метода API, например 'artist.search'
+ * @param {Object} [params={}] - Дополнительные параметры запроса
+ * @returns {Promise<Object>} - Ответ API в формате JSON
+ * @throws {Error} При ошибке HTTP-запроса
+ */
 async function fetchFromApi(method, params = {}) {
   // Создаём URL с параметрами
   const url = new URL(API_BASE);
@@ -237,7 +244,12 @@ function switchTab(tabName) {
   });
 }
 
-// --- Основная функция поиска и рендеринга ---
+/**
+ * Основная функция поиска.
+ * Выполняет параллельный поиск по артистам, альбомам и трекам,
+ * обновляет URL и заголовок, рендерит результаты и переключает вкладку.
+ * @param {string} query - Строка поиска
+ */
 async function performSearch(query) {
   if (!query) return;
   console.log("hello");

@@ -1,11 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-// import App from './App';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+/**
+ * Точка входа в React-приложение.
+ * Создает корень React на элементе с id 'root' и рендерит в него главный компонент <App />.
+ * Оборачивает приложение в <React.StrictMode> для дополнительной проверки и предупреждений в разработке.
+ *
+ * @module index
+ */
+
+const container = document.getElementById('root');
+const root = createRoot(container!);
+
+root.render(
+  <React.StrictMode>
+      <App />
+  </React.StrictMode>
+);

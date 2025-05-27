@@ -100,7 +100,7 @@ const renderArtists = async (limit = 12) => {
   for (const artist of artists) {
     // Получаем теги артиста (не дожидаемся рендеринга, ждем перед вставкой)
     const tags = await getArtistTags(artist.name, 3);
-    const tagText = tags.map(t => t.name).join(' - ');
+    const tagText = tags.map(t => t.name).join(' · ');
 
     // Создаем карточку артиста
     const card = document.createElement('div');
@@ -153,7 +153,7 @@ const renderTracks = async (limit = 18) => {
   for (const track of tracks) {
     // Получаем теги трека
     const tags = await getTrackTags(track.artist.name, track.name, 3);
-    const tagText = tags.map(t => t.name).join(' - ');
+    const tagText = tags.map(t => t.name).join(' · ');
 
     // Создаем элемент трека
     const item = document.createElement('div');

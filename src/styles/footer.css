@@ -1,0 +1,167 @@
+/* Footer Styles */
+.footer {
+    background-color: #121212;
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    padding: 40px 25px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+}
+
+.footer-column-header {
+    color: gray;
+    font-weight: 800;
+    margin-bottom: 8px;
+    font-size: 9px;
+}
+
+.footer-column-ul {
+    list-style: none;
+}
+
+.footer-column-li {
+    margin-bottom: 4px;
+}
+
+.footer-column-a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footer-column-a:hover {
+    text-decoration: underline;
+}
+
+.language-selector {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  border-top: 1px solid #333;
+  width: 100%;
+}
+
+/* Контейнер с левой и правой колонкой */
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Выровнять элементы справа */
+  gap: 4px;
+}
+
+/* Ссылки языков */
+.language-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.active {
+  color: white;
+  text-decoration: none;
+}
+
+.no-active {
+  color: gray;
+  text-decoration: none;
+}
+
+.no-active:hover {
+  text-decoration: underline;
+}
+
+/* Временная зона */
+.time-zone {
+  color: gray;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.time-zone:hover {
+  text-decoration: underline;
+}
+
+.time-zone strong {
+  color: white;
+  font-weight: 500;
+  margin-left: 3px;
+}
+
+/* AudioScrobbler */
+.audioscrobbler-text {
+  color: white;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.footer-logo {
+  height: 16px;
+  width: 30px;
+  display: inline-block;
+}
+
+.copyright {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0 25px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.copyright-content {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px 10px;
+}
+
+.copyright-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px 10px;
+}
+
+.copyright-content-a {
+    color: #666;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.copyright-content-a:hover {
+    text-decoration: underline;
+}
+
+.copyright-credits {
+    width: 100%;
+}
